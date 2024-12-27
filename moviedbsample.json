@@ -1,0 +1,20 @@
+[
+    {
+        "title": "Inception",
+        "genre": "Sci-Fi",
+        "rating": 8.8,
+        "streamingLink": "https://example.com/inception"
+    },
+    {
+        "title": "The Godfather",
+        "genre": "Crime",
+        "rating": 9.2,
+        "streamingLink": "https://example.com/godfather"
+    },
+    {
+        "title": "The Dark Knight",
+        "genre": "Action",
+        "rating": 9.0,
+        "streamingLink": "https://example.com/darkknight"
+    }
+]
