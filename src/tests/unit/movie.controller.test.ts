@@ -1,5 +1,5 @@
 import request from 'supertest';
-import app from '../server'; // Adjust based on how you export your app
+import app from '../server'; 
 
 describe('Movie API', () => {
 
@@ -29,7 +29,7 @@ describe('Movie API', () => {
     });
 
     it('should update an existing movie', async () => {
-        // First add a movie to update later.
+      
         const addedResponse = await request(app)
             .post('/movies')
             .send({
@@ -50,7 +50,7 @@ describe('Movie API', () => {
     });
 
     it('should delete a movie', async () => {
-        // First add a movie to delete later.
+        
         const addedResponse = await request(app)
             .post('/movies')
             .send({
