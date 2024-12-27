@@ -48,15 +48,15 @@ export const updateMovie = async (req: Request, res: Response): Promise<void> =>
       const updatedMovie = await Movie.findByIdAndUpdate(
         id,
         { title, genre, rating, streamingLink },
-        { new: true } // Return the updated document
+        { new: true } 
       );
   
       if (!updatedMovie) {
         res.status(404).json({ message: "Movie not found" });
-        return; // Ensure no further code runs
+        return; 
       }
   
-      res.status(200).json(updatedMovie); // Send the updated movie back to the client
+      res.status(200).json(updatedMovie); 
     } catch (error) {
       console.error("Error updating movie:", error);
       res.status(500).json({ message: "Internal server error" });
@@ -74,7 +74,7 @@ export const deleteMovie = async (req: Request, res: Response): Promise<void> =>
   
       if (!deletedMovie) {
         res.status(404).json({ message: "Movie not found" });
-        return; // Ensure no further code runs
+        return; 
       }
   
       res.status(200).json({ message: "Movie deleted successfully" });
