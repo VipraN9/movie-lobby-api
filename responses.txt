@@ -1,0 +1,31 @@
+Sample Requests and Responses
+
+GET /movies
+
+text
+GET /movies HTTP/1.1
+Host: localhost:{PORT}
+Response:
+json
+[
+    {"_id":"1","title":"Inception","genre":"Sci-Fi","rating":8.8,"streamingLink":"https://example.com/inception"},
+    ...
+]
+
+POST /movies
+
+text
+POST /movies HTTP/1.1
+Host: localhost:{PORT}
+Content-Type: application/json
+{
+    "title": "New Movie",
+    "genre": "Drama",
+    "rating": 7.5,
+    "streamingLink": "https://example.com/newmovie"
+}
+Response:
+json
+{
+    "_id":"2","title":"New Movie","genre":"Drama","rating":7.5,"streamingLink":"https://example.com/newmovie"
+}
