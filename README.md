@@ -32,7 +32,7 @@ npx nodemon src/server.ts
 Run tests:
 To run tests using Jest:
 
-npx jest src/tests/movie.test.ts --watchAll --detectOpenHandles --forceExit 
+npx jest src/tests/unit/movie.controller.test.ts --watchAll --detectOpenHandles --forceExit 
 
 # Brief API Documentation
 
